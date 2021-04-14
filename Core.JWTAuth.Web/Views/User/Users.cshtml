@@ -1,0 +1,77 @@
+﻿@model IEnumerable<Core.JWTAuth.Web.Models.User>
+
+@{
+    ViewData["Title"] = "Users";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Users</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.USERID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PASSWORD)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FIRST_NAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LAST_NAME)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EMAILID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.PHONE)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ACCESS_LEVEL)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.READ_ONLY)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.USERID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PASSWORD)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.FIRST_NAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.LAST_NAME)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EMAILID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.PHONE)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ACCESS_LEVEL)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.READ_ONLY)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "UserInfo", new { userId = item.USERID }) |
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

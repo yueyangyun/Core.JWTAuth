@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "zKssPD3C7Fet/VHH5zPbC0/lXCscdhXGDcJswyYMgHIp1ELoHXp4zJkTlflF688cicptMeYkoM3I/eaFv93+KQ==",
+  "success": true,
+  "projectFilePath": "D:\\.net\\.netCore\\Core.JWTAuth\\Core.JWTAuth.Console\\Core.JWTAuth.Console.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\by\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\by\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\6.10.0\\microsoft.identitymodel.jsonwebtokens.6.10.0.nupkg.sha512",
+    "C:\\Users\\by\\.nuget\\packages\\microsoft.identitymodel.logging\\6.10.0\\microsoft.identitymodel.logging.6.10.0.nupkg.sha512",
+    "C:\\Users\\by\\.nuget\\packages\\microsoft.identitymodel.tokens\\6.10.0\\microsoft.identitymodel.tokens.6.10.0.nupkg.sha512",
+    "C:\\Users\\by\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\by\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.10.0\\system.identitymodel.tokens.jwt.6.10.0.nupkg.sha512",
+    "C:\\Users\\by\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

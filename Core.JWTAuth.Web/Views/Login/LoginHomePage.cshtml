@@ -1,0 +1,49 @@
+﻿@model Core.JWTAuth.Web.Models.User
+@{
+    ViewData["Title"] = "Login Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<style>
+    .layui-input, .layui-textarea{
+        width:20%;
+    }
+    body{
+        margin-top:50px;
+    }
+</style>
+<form class="layui-form" action="/Login/LogIn" method="post">
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="layui-form-item">
+            <h1>欢迎您： @User.Identity.Name</h1>
+            <button type="button" class="layui-btn" onclick="LogOut()">登出</button>
+        </div>
+    }
+    else
+    {
+        <div class="layui-form-item">
+            <label class="layui-form-label">用户名</label>
+            <div class="layui-input-block">
+                <input type="text" name="USERID" lay-verify="name" autocomplete="off" placeholder="请输入用户名" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">密码框</label>
+            <div class="layui-input-block">
+                <input type="password" name="PASSWORD" placeholder="请输入密码" autocomplete="off" class="layui-input">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button type="submit" class="layui-btn">登录</button>
+            </div>
+        </div>
+    }
+</form>
+
+<script type="text/javascript">
+    function LogOut() {
+        window.location.href = "/Login/LogOut";
+        return;
+    }
+</script>

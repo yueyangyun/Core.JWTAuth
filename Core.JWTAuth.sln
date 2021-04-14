@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31105.61
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.JWTAuth.Api", "Core.JWTAuth\Core.JWTAuth.Api.csproj", "{02E40F84-2A67-4A1F-92E4-DBE565FFCAD5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core.JWTAuth.Console", "Core.JWTAuth.Console\Core.JWTAuth.Console.csproj", "{AF645EC3-AC5D-46EC-B624-D0B65F2D24DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core.JWTAuth.Web", "Core.JWTAuth.Web\Core.JWTAuth.Web.csproj", "{6618E6BD-F876-4F78-B478-71F1A89D5161}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02E40F84-2A67-4A1F-92E4-DBE565FFCAD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02E40F84-2A67-4A1F-92E4-DBE565FFCAD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02E40F84-2A67-4A1F-92E4-DBE565FFCAD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02E40F84-2A67-4A1F-92E4-DBE565FFCAD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF645EC3-AC5D-46EC-B624-D0B65F2D24DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF645EC3-AC5D-46EC-B624-D0B65F2D24DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF645EC3-AC5D-46EC-B624-D0B65F2D24DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF645EC3-AC5D-46EC-B624-D0B65F2D24DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6618E6BD-F876-4F78-B478-71F1A89D5161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6618E6BD-F876-4F78-B478-71F1A89D5161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6618E6BD-F876-4F78-B478-71F1A89D5161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6618E6BD-F876-4F78-B478-71F1A89D5161}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {AC08AC96-6542-4264-B203-B80DEB94E1DF}
+	EndGlobalSection
+EndGlobal

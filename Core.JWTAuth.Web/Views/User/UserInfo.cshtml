@@ -1,0 +1,68 @@
+﻿@model Core.JWTAuth.Web.Models.User
+@{
+    ViewData["Title"] = "UserInfo";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>UserInfo</h1>
+
+<h4>User</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="UserInfo">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="USERID" class="control-label"></label>
+                <input asp-for="USERID" value="@(Model.USERID)" class="form-control" />
+                <span asp-validation-for="USERID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PASSWORD" class="control-label"></label>
+                <input asp-for="PASSWORD" value="@(Model.PASSWORD)" class="form-control" />
+                <span asp-validation-for="PASSWORD" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="FIRST_NAME" class="control-label"></label>
+                <input asp-for="FIRST_NAME" value="@(Model.FIRST_NAME)" class="form-control" />
+                <span asp-validation-for="FIRST_NAME" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="LAST_NAME" class="control-label"></label>
+                <input asp-for="LAST_NAME" value="@(Model.LAST_NAME)" class="form-control" />
+                <span asp-validation-for="LAST_NAME" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="EMAILID" class="control-label"></label>
+                <input asp-for="EMAILID" value="@(Model.EMAILID)" class="form-control" />
+                <span asp-validation-for="EMAILID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PHONE" class="control-label"></label>
+                <input asp-for="PHONE" value="@(Model.PHONE)" class="form-control" />
+                <span asp-validation-for="PHONE" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ACCESS_LEVEL" class="control-label"></label>
+                <input asp-for="ACCESS_LEVEL" value="@(Model.ACCESS_LEVEL)" class="form-control" />
+                <span asp-validation-for="ACCESS_LEVEL" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="READ_ONLY" class="control-label"></label>
+                <input asp-for="READ_ONLY" value="@(Model.READ_ONLY)" class="form-control" />
+                <span asp-validation-for="READ_ONLY" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
